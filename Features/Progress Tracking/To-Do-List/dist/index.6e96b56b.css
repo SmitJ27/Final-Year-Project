@@ -1,0 +1,119 @@
+body {
+  color: #fff;
+  background-color: #2c3e50;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  display: flex;
+}
+
+.todo-container {
+  text-align: center;
+  background-color: #34495e;
+  border-radius: 10px;
+  width: 400px;
+  padding: 30px;
+  box-shadow: 0 4px 15px #0000004d;
+}
+
+h1 {
+  margin-bottom: 20px;
+  font-size: 2rem;
+}
+
+input[type="text"] {
+  color: #fff;
+  background-color: #2c3e50;
+  border: none;
+  border-radius: 5px;
+  outline: none;
+  width: 65%;
+  margin-bottom: 20px;
+  padding: 10px;
+  font-size: 1rem;
+  transition: box-shadow .3s ease-in-out;
+  box-shadow: 0 4px 10px #fff6;
+}
+
+input[type="text"]:focus {
+  box-shadow: 0 4px 15px #ffffffb3;
+}
+
+input[type="date"] {
+  color: #fff;
+  background-color: #2c3e50;
+  border: none;
+  border-radius: 5px;
+  width: 30%;
+  padding: 10px;
+  font-size: 1rem;
+  transition: box-shadow .3s ease-in-out;
+}
+
+input[type="date"]:focus {
+  box-shadow: 0 4px 15px #ffffffb3;
+}
+
+button {
+  color: #fff;
+  cursor: pointer;
+  background-color: #1abc9c;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  font-size: 1rem;
+  transition: box-shadow .3s ease-in-out;
+}
+
+button:hover {
+  box-shadow: 0 4px 15px #1abc9cb3;
+}
+
+ul {
+  padding: 0;
+  list-style-type: none;
+}
+
+ul li {
+  background-color: #16a085;
+  border-radius: 5px;
+  justify-content: space-between;
+  align-items: center;
+  margin: 10px 0;
+  padding: 10px;
+  font-size: 1.2rem;
+  transition: box-shadow .3s ease-in-out;
+  display: flex;
+  box-shadow: 0 4px 10px #1abc9c4d;
+}
+
+ul li:hover {
+  box-shadow: 0 4px 15px #1abc9cb3;
+}
+
+ul li.completed {
+  color: #7f8c8d;
+  text-decoration: line-through;
+}
+
+button.delete {
+  cursor: pointer;
+  background-color: #e74c3c;
+  border-radius: 5px;
+  padding: 5px 10px;
+  transition: background-color .3s;
+}
+
+button.delete:hover {
+  background-color: #c0392b;
+}
+
+.task-date {
+  color: #f39c12;
+  margin-left: 10px;
+  font-size: .9rem;
+}
+/*# sourceMappingURL=index.6e96b56b.css.map */

@@ -1,0 +1,131 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  color: #d3d3d3;
+  background-color: #1a1a2e;
+  font-family: Poppins, sans-serif;
+  line-height: 1.6;
+}
+
+.navbar {
+  background: #0f0f1f;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  display: flex;
+}
+
+.navbar .logo a {
+  color: #0fc;
+  font-size: 24px;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.glow-button {
+  color: #1a1a2e;
+  cursor: pointer;
+  background-color: #0fc;
+  border: none;
+  border-radius: 8px;
+  padding: 12px 30px;
+  font-size: 18px;
+  font-weight: 600;
+  transition: box-shadow .3s, transform .3s;
+}
+
+.glow-button:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 20px #0fc, 0 0 30px #0fcc;
+}
+
+.about-us {
+  text-align: center;
+  background: linear-gradient(45deg, #1a1a2e, #0f0f1f);
+  padding: 50px;
+}
+
+.section-title {
+  color: #0fc;
+  margin-bottom: 30px;
+  font-size: 3rem;
+}
+
+.cards-container {
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  display: flex;
+}
+
+.card {
+  text-align: center;
+  background: #292b44;
+  border-radius: 8px;
+  width: 250px;
+  padding: 20px;
+  transition: transform .3s, box-shadow .3s;
+  overflow: hidden;
+  box-shadow: 0 4px 8px #0003;
+}
+
+.card-photo img {
+  border-radius: 50%;
+  width: 100px;
+  height: 100px;
+  margin-bottom: 15px;
+}
+
+.card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 10px 20px #fc3c, 0 0 30px #fc39;
+}
+
+.card-content h2 {
+  color: #0fc;
+  font-size: 1.5rem;
+}
+
+.card-content p {
+  margin: 10px 0;
+  font-size: 1rem;
+}
+
+.card-detail {
+  margin-top: 15px;
+  font-size: .9rem;
+  display: none;
+}
+
+.card.active .card-detail {
+  display: block;
+}
+
+.read-more {
+  color: #1a1a2e;
+  cursor: pointer;
+  background: linear-gradient(45deg, #ffb142, #fc3);
+  border: none;
+  border-radius: 8px;
+  padding: 10px 20px;
+  font-size: 16px;
+  font-weight: 600;
+  transition: box-shadow .3s, transform .3s;
+}
+
+.read-more:hover {
+  transform: scale(1.1);
+  box-shadow: 0 0 20px #fc3, 0 0 30px #fc3c;
+}
+
+.footer {
+  color: #d3d3d3;
+  text-align: center;
+  background-color: #0f0f1f;
+  padding: 10px;
+}
+/*# sourceMappingURL=index.500ae9b7.css.map */

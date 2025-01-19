@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AI Pathway Questionnaire</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+  <div class="container">
+    <!-- Welcome Screen -->
+    <div id="welcome-screen" class="screen active">
+      <h1>Welcome to AI Pathway Questionnaire</h1>
+      <p>Let’s explore your interests and skills to guide you toward your AI learning journey!</p>
+      <button onclick="startQuiz()">Get Started</button>
+    </div>
+
+    <!-- Quiz Screen -->
+    <div id="quiz-screen" class="screen hidden">
+      <div id="progress-bar">
+        <div id="progress"></div>
+      </div>
+      <h2 id="question-title"></h2>
+      <div id="options-container"></div>
+      <button id="next-btn" onclick="nextQuestion()">Next</button>
+    </div>
+
+    <!-- Result Screen -->
+    <div id="result-screen" class="screen hidden">
+      <h1>Your AI Pathway</h1>
+      <canvas id="result-chart" width="400" height="200"></canvas>
+      <button onclick="downloadReport()">Download Report</button>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
